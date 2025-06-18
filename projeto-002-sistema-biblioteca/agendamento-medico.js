@@ -20,7 +20,7 @@ function cadastrarMedico(){
                 disponivel: true,
             };
             medicos.push(medico);
-            console.log("Medico cadastrado com sucesso!");
+            console.log("Medico cadastrado com sucessoo!");
             iniciar();
 
         })
