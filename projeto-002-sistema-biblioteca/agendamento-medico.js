@@ -106,7 +106,7 @@ function iniciar(){
                 listarPaciente();
                 break;
             case "0" :
-                console.log("Saindo do sistema...");
+                console.log("Saindo do sistema....");
                 rl.close();
                 break;
             default:
