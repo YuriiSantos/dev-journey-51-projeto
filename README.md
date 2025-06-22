@@ -8,18 +8,20 @@ Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** co
 ## 📂 Lista de Projetos
 
 ### ✅ Concluídos
-- **001** - [Calculadora Científica](./projeto-001-calculadora-cientifica/) - Sistema completo com 11 funções matemáticas + histórico das últimas operações
+- **001** - [Calculadora Científica](./projeto-001-calculadora-cientifica/) - **COMPLETO** Sistema completo com 11 funções matemáticas + histórico das últimas operações
 - **002** - [Sistema Biblioteca](./projeto-002-sistema-biblioteca/) - **COMPLETO**: Sistema completo com 7 funcionalidades
+- **003** - [Sistema de agendamento completo](./projeto-003-agendamento-medico/) - **COMPLETO**: Sistema completo com 6 funcionalidades
+
 
 ### 🔄 Em Desenvolvimento
-- **003** - [Jogo da Velha](./projeto-003-jogo-velha/) - **PRÓXIMO**: Tabuleiro 3x3, verificação de vitória, IA básica
+- **004** - [Jogo da Velha](./projeto-003-jogo-velha/) - **PRÓXIMO**: Tabuleiro 3x3, verificação de vitória, IA básica
 
 ### 📋 Próximos
-- **004** - Validador de Documentos BR
-- **005** - Sistema Bancário
-- **006** - Analisador de Textos
-- **007** - Gerador de Senhas
-- **008** - Loja Virtual Console
+- **005** - Validador de Documentos BR
+- **006** - Sistema Bancário
+- **007** - Analisador de Textos
+- **008** - Gerador de Senhas
+- **009** - Loja Virtual Console
 
 ## 🛠️ Stack Tecnológica
 - **Backend:** Java + Spring Boot + PostgreSQL
