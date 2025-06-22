@@ -219,8 +219,6 @@ function devolverLivro(){
         iniciar();
         
     })
-
-
 }
 
 
