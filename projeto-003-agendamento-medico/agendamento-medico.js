@@ -157,7 +157,36 @@ function finalizarConsultas(){
         iniciar();
         return;
     }
-    console.log("=========== CONSULTAS ATIVAS ===========")
+    console.log("=========== CONSULTAS ATIVAS ===========");
+    consultasAtivas.forEach((consulta, index) => {
+        const paciente = pacientes.find( u => u.id === consulta.pacienteId);
+        const medico = medicos.find(l => l.id === consulta.medicoId);
+
+        console.log(`${index + 1}. Consulta #${consulta.id}`);
+        console.log(` Paciente: ${paciente.nome}`);
+        console.log(` Medico: ${medico.nome}`);
+        console.log("======================================")
+    });
+
+    rl.question("Qual o id da consulta?", (consultaId) => {
+        const idConsulta = parseInt(consultaId);
+
+        const consulta = consultas.find(e => e.id === idConsulta && e.status === "ativo")
+
+        if (consulta){
+            consulta.status = "finalizada";
+            const medico = medicos.find(l => l.id === consulta.medicoId)
+
+            medico.disponivel = true;
+            console.log( "Consulta finalizada com sucesso!")
+            
+        } else {
+            console.log("Consulta nao realizada!");
+        }
+        iniciar();
+    })
+
+
 };
 
 function mostrarMenu(){
