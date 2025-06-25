@@ -75,11 +75,11 @@ function mostrarTabuleiro() {
 
   console.log("\n Tabuleiro jogo da velha");
   console.log(`\n${pos1} | ${pos2} | ${pos3}`);
-  console.log("_____________");
+  console.log("_______________");
   console.log(`\n${pos4} | ${pos5} | ${pos6}`);
-  console.log("_____________");
+  console.log("_______________");
   console.log(`\n${pos7} | ${pos8} | ${pos9}`);
-  console.log("_____________");
+  console.log("_______________");
 }
 
 function fazerJogada(posicao) {
