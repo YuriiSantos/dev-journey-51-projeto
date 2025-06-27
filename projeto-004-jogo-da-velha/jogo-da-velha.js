@@ -73,7 +73,7 @@ function mostrarTabuleiro() {
     pos9 = posicoes[8];
   }
 
-  console.log("\n Tabuleiro jogo da velha");
+  console.log("\n !!Tabuleiro jogo da velha!!");
   console.log(`\n${pos1} | ${pos2} | ${pos3}`);
   console.log("_______________");
   console.log(`\n${pos4} | ${pos5} | ${pos6}`);
