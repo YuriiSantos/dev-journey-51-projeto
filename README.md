@@ -14,7 +14,7 @@ Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** co
 - **002** - [Sistema Biblioteca](./projeto-002-sistema-biblioteca/) - **COMPLETO**: Sistema completo com 7 funcionalidades
 - **003** - [Sistema de Agendamento Médico](./projeto-003-agendamento-medico/) - **COMPLETO**: Sistema completo com 6 funcionalidades
 - **004** - [Jogo da Velha](./projeto-004-jogo-velha/) - **COMPLETO**: Tabuleiro 3x3, verificação de vitória, modo 1P vs 2P
-- **005** - [Validador de Documentos BR](./projeto-005-validador-de-documentos-br/) - **COMPLETO**: Validação de CPF, CNPJ, CEP, Email + Gerador de CPF
+- **005** - [Validador de Documentos BR](./projeto-005-validador-documentos/) - **COMPLETO**: Validação de CPF, CNPJ, CEP, Email + Gerador de CPF
 
 ### 🔄 Em Desenvolvimento
 
