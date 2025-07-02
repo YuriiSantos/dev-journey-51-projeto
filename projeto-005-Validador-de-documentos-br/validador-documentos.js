@@ -24,7 +24,7 @@ function limparFormatacao(documento) {
   return semBarras;
 }
 
-//CPF
+//CPF//
 function calcularPrimeiroDigito(cpfLimpo) {
   let primeiros9 = cpfLimpo.substring(0, 9);
   let soma = 0;
