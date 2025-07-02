@@ -9,6 +9,10 @@ const rl = readline.createInterface({
 const posicoes = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
 let jogada = "❌";
 let fimJogo = false;
+let modoJogo = 1;
+let placarX = 0;
+let placarO = 0;
+let empates = 0;
 
 function mostrarTabuleiro() {
   let pos1;
@@ -73,13 +77,13 @@ function mostrarTabuleiro() {
     pos9 = posicoes[8];
   }
 
-  console.log("\n !!Tabuleiro jogo da velha!!");
+  console.log("\n Tabuleiro jogo da velha");
   console.log(`\n${pos1} | ${pos2} | ${pos3}`);
-  console.log("_______________");
+  console.log("_____________");
   console.log(`\n${pos4} | ${pos5} | ${pos6}`);
-  console.log("_______________");
+  console.log("_____________");
   console.log(`\n${pos7} | ${pos8} | ${pos9}`);
-  console.log("_______________");
+  console.log("_____________");
 }
 
 function fazerJogada(posicao) {
@@ -91,10 +95,20 @@ function fazerJogada(posicao) {
     const vencedor = verificarVitoria();
     if (vencedor) {
       console.log(`Parabéns! Jogador ${vencedor} venceu!`);
+      atualizarPlacar(vencedor);
       mostrarTabuleiro();
       fimJogo = true;
       return;
     }
+
+    if (verificarEmpate()) {
+      console.log("Empate! Ninguem Ganhou!");
+      atualizarPlacar("empate");
+      mostrarTabuleiro();
+      fimJogo = true;
+      return;
+    }
+
     jogada = jogada === "❌" ? "🔴" : "❌";
   } else {
     console.log("Posicao ocupada");
@@ -183,15 +197,105 @@ function verificarVitoria() {
   return null;
 }
 
-function iniciarJogo() {
+function verificarEmpate() {
+  for (let i = 0; i < posicoes.length; i++) {
+    if (posicoes[i] === " ") {
+      return false;
+    }
+  }
+  return true;
+}
+
+function atualizarPlacar(resultado) {
+  if (resultado === "❌") {
+    placarX++;
+  } else if (resultado === "🔴") {
+    placarO++;
+  } else {
+    empates++;
+  }
+}
+
+function exibirPlacar() {
+  console.log("\n=== PLACAR ===");
+  console.log(`❌ Jogador X: ${placarX}`);
+  console.log(`🔴 Jogador O: ${placarO}`);
+  console.log(`🤝 Empates: ${empates}`);
+  console.log("===============\n");
+}
+
+function reiniciarJogo() {
+  for (let i = 0; i < posicoes.length; i++) {
+    posicoes[i] = " ";
+  }
+  jogada = "❌";
+  fimJogo = false;
+}
+
+function perguntarNovoJogo() {
+  rl.question("Jogar novamente? (s/n): ", (resposta) => {
+    if (resposta.toLowerCase() === "s") {
+      reiniciarJogo();
+      iniciarJogo();
+    } else {
+      console.log("Obrigado por jogar!");
+      rl.close();
+    }
+  });
+}
+
+function escolherModo() {
+  return new Promise((resolve) => {
+    rl.question(
+      "Escolha o modo:\n1 - Vs Computador\n2 - Vs Jogador\nDigite (1 ou 2): ",
+      (resposta) => {
+        const modo = parseInt(resposta);
+        if (modo === 1 || modo === 2) {
+          modoJogo = modo;
+          resolve();
+        } else {
+          console.log("Digite apenas 1 ou 2!");
+          escolherModo().then(resolve);
+        }
+      }
+    );
+  });
+}
+
+function computador() {
+  const posicoesVazias = [];
+
+  for (let i = 0; i < posicoes.length; i++) {
+    if (posicoes[i] === " ") {
+      posicoesVazias.push(i + 1);
+    }
+  }
+
+  const indiceAleatorio = Math.floor(Math.random() * posicoesVazias.length);
+  return posicoesVazias[indiceAleatorio];
+}
+
+async function iniciarJogo() {
   console.log("Seja bem vindo ao jogo da velha do yuri!");
+  await escolherModo();
+
   function proximaJogada() {
     if (fimJogo) {
-      rl.close();
+      exibirPlacar();
+      perguntarNovoJogo();
       return;
     }
 
     mostrarTabuleiro();
+
+    if (modoJogo === 1 && jogada === "🔴") {
+      console.log("Vez do computador....");
+      const posicaoComputador = computador();
+      fazerJogada(posicaoComputador);
+      proximaJogada();
+      return;
+    }
+
     rl.question(
       `Jogador ${jogada}, escolha uma posição do (1-9): `,
       (resposta) => {
