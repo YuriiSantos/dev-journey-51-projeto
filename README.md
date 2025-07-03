@@ -4,7 +4,7 @@
 
 Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** construindo 52 projetos práticos.
 
-## 📊 Progresso: 5/52 (10%) 🔥
+## 📊 Progresso: 6/52 (12%) 🔥
 
 ## 📂 Lista de Projetos
 
@@ -15,17 +15,19 @@ Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** co
 - **003** - [Sistema de Agendamento Médico](./projeto-003-agendamento-medico/) - **COMPLETO**: Sistema completo com 6 funcionalidades
 - **004** - [Jogo da Velha](./projeto-004-jogo-velha/) - **COMPLETO**: Tabuleiro 3x3, verificação de vitória, modo 1P vs 2P
 - **005** - [Validador de Documentos BR](./projeto-005-validador-documentos/) - **COMPLETO**: Validação de CPF, CNPJ, CEP, Email + Gerador de CPF
+- **006** - [Sistema Bancário](./projeto-006-sistema-bancario/) - **COMPLETO**: Contas, depósitos, saques, transferências, extrato + histórico completo
 
 ### 🔄 Em Desenvolvimento
 
-- **006** - [Sistema Bancário](./projeto-006-sistema-bancario/) - **PRÓXIMO**: Contas, depósitos, saques, transferências, extrato
+- **007** - Analisador de Textos - **PRÓXIMO**: Contador de palavras, frequência, tempo de leitura, busca/substituição
 
 ### 📋 Próximos
 
-- **007** - Analisador de Textos
 - **008** - Gerador de Senhas
 - **009** - Loja Virtual Console
 - **010** - Portfolio Pessoal
+- **011** - TODO List Visual
+- **012** - App de Clima
 
 ## 🛠️ Stack Tecnológica
 
@@ -59,11 +61,15 @@ Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** co
 - ✅ Lógica de jogos (tabuleiro, vitória)
 - ✅ Sistemas CRUD completos
 - ✅ Relacionamento entre entidades
+- ✅ Operadores lógicos (||, &&, !)
+- ✅ Comparação de tipos (== vs ===)
+- ✅ Estruturas de dados relacionais
+- ✅ Validações financeiras e de saldo
 
 ## 📈 Estatísticas
 
-- **Linhas de código:** ~1,500+
-- **Funções criadas:** ~40+
-- **Conceitos dominados:** 15+
-- **Tempo investido:** ~40 horas
+- **Linhas de código:** ~2,000+
+- **Funções criadas:** ~50+
+- **Conceitos dominados:** 20+
+- **Tempo investido:** ~50 horas
 - **Próxima meta:** 10 projetos (20%)
