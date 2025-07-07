@@ -146,10 +146,62 @@ async function finalizarPedido() {
   exibirCarrinho();
 
   const confirmacao = await perguntarOpcao("Confirmar a compra? (S/N): ");
-  if (confirmacao.toLowerCase() !== "S") {
+  if (confirmacao.toLowerCase() !== "s") {
     console.log("Compra cancelada!");
     return;
   }
+
+  carrinho.forEach((itemCarrinho) => {
+    const produto = produtos.find((p) => p.id == itemCarrinho.produtoId);
+    produto.estoque -= itemCarrinho.quantidade;
+  });
+
+  const pedido = {
+    id: pedidos.length + 1,
+    data: new Date().toLocaleDateString("pt-BR"),
+    itens: [...carrinho],
+    total: carrinho.reduce(
+      (total, item) => total + item.quantidade * item.precoUnitario,
+      0
+    ),
+  };
+
+  pedidos.push(pedido);
+  carrinho.length = 0;
+
+  console.log("\nPEDIDO FINALIZADO COM SUCESSO!");
+  console.log(
+    `Pedido #${pedido.id} - Total: R$ ${pedido.total
+      .toFixed(2)
+      .replace(".", ",")}`
+  );
+  console.log("Obrigado pela compra!");
+}
+
+function exibirHistorico() {
+  if (pedidos.length === 0) {
+    console.log("Nenhum pedido realizado ainda!");
+    return;
+  }
+
+  console.log("\n=== HISTÓRICO DE PEDIDOS ===");
+
+  pedidos.forEach((pedido) => {
+    console.log(`\nPedido #${pedido.id} - Data: ${pedido.data}`);
+    console.log("Itens:");
+
+    pedido.itens.forEach((item) => {
+      const produto = produtos.find((p) => p.id == item.produtoId);
+      console.log(
+        `  - ${produto.nome} | Qtd: ${
+          item.quantidade
+        } | Preço: R$ ${item.precoUnitario.toFixed(2).replace(".", ",")}`
+      );
+    });
+
+    console.log(`Total: R$ ${pedido.total.toFixed(2).replace(".", ",")}`);
+    console.log("-".repeat(50));
+  });
 }
 
 async function main() {
@@ -174,11 +226,11 @@ async function main() {
         await perguntarOpcao("Pressione ENTER para continuar...");
         break;
       case "4":
-        console.log("Finalizar pedido");
+        await finalizarPedido();
         await perguntarOpcao("Pressione ENTER para continuar...");
         break;
       case "5":
-        console.log("Histórico");
+        exibirHistorico();
         await perguntarOpcao("Pressione ENTER para continuar...");
         break;
       case "0":
