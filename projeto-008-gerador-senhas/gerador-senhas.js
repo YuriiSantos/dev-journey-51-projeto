@@ -152,7 +152,7 @@ function listarSenhas() {
   if (senhasSalvas.length === 0) {
     console.log("Nenhuma senha salva!");
   } else {
-    console.log("\n=== SENHAS SALVAS ===");
+    console.log("\n=== SENHAS SALVAS ====");
     senhasSalvas.forEach((item, index) => {
       // Descriptografar senha
       const decipher = crypto.createDecipher("aes192", "minha-chave-secreta");
