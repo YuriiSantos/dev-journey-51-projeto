@@ -40,7 +40,7 @@ const carrinho = [];
 const pedidos = [];
 
 function mostrarMenu() {
-  console.log("==== LOJA VIRTUAL CONSOLE ====");
+  console.log("===== LOJA VIRTUAL CONSOLE =====");
   console.log("1. Ver produtos");
   console.log("2. Adicionar ao carrinho");
   console.log("3. Ver carrinho");
