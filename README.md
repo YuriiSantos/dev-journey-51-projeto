@@ -1,75 +1,81 @@
-# 🚀 Jornada Full Stack - 52 Projetos Práticos
+🚀 Jornada Full Stack - 52 Projetos Práticos
+🎯 Objetivo
+Dominar JavaScript, Java, Spring Boot, React e TypeScript construindo 52 projetos práticos.
+📊 Progresso: 10/52 (19%) 🔥
+📂 Lista de Projetos
+✅ Projetos Console (JavaScript Fundamentos)
 
-## 🎯 Objetivo
+001 - Calculadora Científica - COMPLETO - Sistema com 11 funções matemáticas + histórico
+002 - Sistema Biblioteca - COMPLETO - CRUD completo com 7 funcionalidades
+003 - Sistema de Agendamento Médico - COMPLETO - Gerenciamento de consultas e pacientes
+004 - Jogo da Velha - COMPLETO - Tabuleiro 3x3, verificação de vitória, 1P vs 2P
+005 - Validador de Documentos BR - COMPLETO - Validação CPF, CNPJ, CEP + gerador
+006 - Sistema Bancário - COMPLETO - Contas, depósitos, saques, transferências, extrato
+007 - Analisador de Textos - COMPLETO - Contador de palavras, frequência, tempo de leitura
+008 - Gerador de Senhas - COMPLETO - Senhas seguras com diferentes níveis de complexidade
+009 - Loja Virtual Console - COMPLETO - Catálogo, carrinho, pedidos, sistema completo de e-commerce
 
-Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** construindo 52 projetos práticos.
+✅ Projetos Web (HTML/CSS/JavaScript)
 
-## 📊 Progresso: 6/52 (12%) 🔥
+010 - Portfolio Pessoal - COMPLETO - Site responsivo com dark mode, smooth scroll e formulário
 
-## 📂 Lista de Projetos
+🔄 Próximos
 
-### ✅ Concluídos
+011 - TODO List Visual - PRÓXIMO - Drag and drop, localStorage, filtros
 
-- **001** - [Calculadora Científica](./projeto-001-calculadora-cientifica/) - **COMPLETO** Sistema completo com 11 funções matemáticas + histórico das últimas operações
-- **002** - [Sistema Biblioteca](./projeto-002-sistema-biblioteca/) - **COMPLETO**: Sistema completo com 7 funcionalidades
-- **003** - [Sistema de Agendamento Médico](./projeto-003-agendamento-medico/) - **COMPLETO**: Sistema completo com 6 funcionalidades
-- **004** - [Jogo da Velha](./projeto-004-jogo-velha/) - **COMPLETO**: Tabuleiro 3x3, verificação de vitória, modo 1P vs 2P
-- **005** - [Validador de Documentos BR](./projeto-005-validador-documentos/) - **COMPLETO**: Validação de CPF, CNPJ, CEP, Email + Gerador de CPF
-- **006** - [Sistema Bancário](./projeto-006-sistema-bancario/) - **COMPLETO**: Contas, depósitos, saques, transferências, extrato + histórico completo
+📋 Próximos
 
-### 🔄 Em Desenvolvimento
+011 - TODO List Visual - PRÓXIMO - Drag and drop, localStorage, filtros
+012 - App de Clima
+013 - Jogo da Cobrinha
+014 - Editor Markdown
+015 - Clone Twitter Vanilla
 
-- **007** - Analisador de Textos - **PRÓXIMO**: Contador de palavras, frequência, tempo de leitura, busca/substituição
+🛠️ Stack Tecnológica
+Frontend
 
-### 📋 Próximos
+Web: HTML5, CSS3, JavaScript ES6
+Frameworks: React + TypeScript + Tailwind CSS
 
-- **008** - Gerador de Senhas
-- **009** - Loja Virtual Console
-- **010** - Portfolio Pessoal
-- **011** - TODO List Visual
-- **012** - App de Clima
+Backend
 
-## 🛠️ Stack Tecnológica
+Linguagens: Java + Spring Boot
+Banco: PostgreSQL
 
-- **Backend:** Java + Spring Boot + PostgreSQL
-- **Frontend:** React + TypeScript + Tailwind CSS
-- **Ferramentas:** Git, Docker, APIs REST
+Ferramentas
 
-## 🧠 Conceitos Dominados
+Git, GitHub, VS Code, Docker
 
-### 📚 **JavaScript Fundamentals**
+🧠 Conceitos Dominados
+📚 JavaScript Fundamentals
 
-- ✅ Arrays e Objetos (manipulação avançada)
-- ✅ Funções e Arrow Functions
-- ✅ Métodos de Array (.find, .filter, .forEach, .every, .split)
-- ✅ Callbacks e Template Strings
-- ✅ Validações e Relacionamento de Dados
-- ✅ Loops (for, while) e Condicionais (if/else, switch/case)
-- ✅ Manipulação de Strings (substring, replace, split)
-- ✅ Programação Assíncrona (async/await, Promises)
-- ✅ Readline e Entrada do Usuário
-- ✅ Algoritmos Matemáticos e Dígitos Verificadores
-- ✅ Modularização e Organização de Código
+✅ Arrays e Objetos (manipulação avançada)
+✅ Funções e Arrow Functions
+✅ Métodos de Array (.find, .filter, .forEach, .every, .map)
+✅ Template Strings e Callbacks
+✅ Loops (for, while) e Condicionais (if/else, switch)
+✅ Manipulação de Strings (substring, replace, split)
+✅ Programação Assíncrona (async/await, Promises)
+✅ Readline e Entrada do Usuário
+✅ Modularização e Organização de Código
 
-### 🎯 **Habilidades Específicas**
+🌐 Web Development
 
-- ✅ Algoritmos de validação (CPF, CNPJ)
-- ✅ Geração de números aleatórios
-- ✅ Tratamento de formatação de documentos
-- ✅ Validação de estruturas (email, CEP)
-- ✅ Interface de menu interativo
-- ✅ Lógica de jogos (tabuleiro, vitória)
-- ✅ Sistemas CRUD completos
-- ✅ Relacionamento entre entidades
-- ✅ Operadores lógicos (||, &&, !)
-- ✅ Comparação de tipos (== vs ===)
-- ✅ Estruturas de dados relacionais
-- ✅ Validações financeiras e de saldo
+✅ HTML5 Semântico (header, nav, main, section, article)
+✅ CSS3 Responsivo (Flexbox, Grid, media queries)
+✅ JavaScript DOM (querySelector, addEventListener, classList)
+✅ CSS Positioning (fixed, relative, absolute)
+✅ CSS Units (rem, px, %, vh/vw)
+✅ Form Handling e Validação
+✅ Dark Mode Implementation
+✅ Smooth Scrolling e UX
 
-## 📈 Estatísticas
+🎯 Algoritmos e Lógica
 
-- **Linhas de código:** ~2,000+
-- **Funções criadas:** ~50+
-- **Conceitos dominados:** 20+
-- **Tempo investido:** ~50 horas
-- **Próxima meta:** 10 projetos (20%)
+✅ Validação de documentos (CPF, CNPJ)
+✅ Algoritmos matemáticos e dígitos verificadores
+✅ Sistemas CRUD completos
+✅ Lógica de jogos (tabuleiro, vitória)
+✅ Relacionamento entre entidades
+✅ Operações financeiras e validações de saldo
+✅ Interface de menu interativo
