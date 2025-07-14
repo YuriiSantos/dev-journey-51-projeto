@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Yuri Santos - Full Stack Developer</title>
+  </head>
+  <body>
+    <header>
+      <button id="dark-mode-toggle">☀️</button>
+      <h1>Yuri Santos</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contatos">Contatos</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Full Stack Developer</h2>
+        <p>Desenvolvedor especializado em JavaScript, Java e Spring Boot</p>
+      </section>
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>10 projetos JavaScript concluídos com foco em lógica e algoritmos</p>
+        <div class="skills">
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>Algoritmos</span>
+          <span>Crud</span>
+        </div>
+      </section>
+      <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+          <article class="projeto">
+            <h3>Calculadora Científica</h3>
+            <p>Sistema Completo com 11 Funções matemáticas + histórico</p>
+            <div class="tech-stack">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+            </div>
+          </article>
+          <article class="projeto">
+            <h3>Sistema Biblioteca</h3>
+            <p>Sistema completo com 7 funcionalidades de gerenciamento</p>
+            <div class="tech-stack">
+              <span>JavaScript</span>
+              <span>CRUD</span>
+            </div>
+          </article>
+          <article class="projeto">
+            <h3>Sistema Agendamento Médico</h3>
+            <p>Sistema completo com 6 funcionalidades de consultas</p>
+            <div class="tech-stack">
+              <span>JavaScript</span>
+              <span>Algoritmos</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contatos">
+        <h2>Contatos</h2>
+        <form id="contact-form">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="email" id="email" placeholder="Seu email" required />
+          <textarea
+            id="mensagem"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
