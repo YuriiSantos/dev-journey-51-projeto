@@ -4,7 +4,7 @@
 
 Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** construindo 52 projetos práticos.
 
-## 📊 Progresso: 10/52 (19%) 🔥
+## 📊 Progresso: 12/52 (23%) 🔥
 
 ## 📂 Lista de Projetos
 
@@ -23,15 +23,15 @@ Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** co
 ### ✅ Projetos Web (HTML/CSS/JavaScript)
 
 - **010** - [Portfolio Pessoal](./projeto-010-portfolio-pessoal/) - **COMPLETO** - Site responsivo com dark mode, smooth scroll e formulário
+- **011** - [TODO List Visual](./projeto-011-todo-visual/) - **COMPLETO** - Drag and drop, localStorage, filtros e temas
+- **012** - [App de Clima](./projeto-012-app-clima/) - **COMPLETO** - API OpenWeather, geolocalização, interface responsiva
 
 ### 🔄 Próximos
 
-- **011** - TODO List Visual - **PRÓXIMO** - Drag and drop, localStorage, filtros
+- **013** - Jogo da Cobrinha - **PRÓXIMO** - Canvas API, game loop, pontuação
 
 ### 📋 Próximos
 
-- **011** - TODO List Visual - **PRÓXIMO** - Drag and drop, localStorage, filtros
-- **012** - App de Clima
 - **013** - Jogo da Cobrinha
 - **014** - Editor Markdown
 - **015** - Clone Twitter Vanilla
@@ -76,6 +76,10 @@ Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** co
 - ✅ Form Handling e Validação
 - ✅ Dark Mode Implementation
 - ✅ Smooth Scrolling e UX
+- ✅ Fetch API e Requisições HTTP
+- ✅ Integração com APIs REST
+- ✅ LocalStorage e Persistência
+- ✅ Event Handling Avançado
 
 ### 🎯 **Algoritmos e Lógica**
 
@@ -89,11 +93,11 @@ Dominar **JavaScript**, **Java**, **Spring Boot**, **React** e **TypeScript** co
 
 ## 📈 Estatísticas
 
-- **Projetos concluídos:** 10/52 (19%)
-- **Linhas de código:** ~3,500+
-- **Conceitos dominados:** 30+
-- **Tecnologias aprendidas:** JavaScript ES6, HTML5, CSS3, DOM
-- **Tempo investido:** ~80 horas
+- **Projetos concluídos:** 12/52 (23%)
+- **Linhas de código:** ~4,500+
+- **Conceitos dominados:** 35+
+- **Tecnologias aprendidas:** JavaScript ES6, HTML5, CSS3, DOM, APIs REST
+- **Tempo investido:** ~100 horas
 - **Próxima meta:** 15 projetos (30%)
 
 ## 🎯 Próximos Marcos
