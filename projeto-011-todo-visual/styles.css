@@ -32,13 +32,13 @@ h1 {
 
 #btnAdicionar {
   padding: 15px 20px;
-  background-color: #007bff;
+  background-color: #666666;
   color: white;
   border: none;
   cursor: pointer;
 }
 #btnAdicionar:hover {
-  background-color: #0056b3;
+  background-color: #585858;
 }
 
 #tarefas {
@@ -66,7 +66,7 @@ h1 {
   margin: 5px 0;
   background-color: #f8f9fa;
   border-radius: 5px;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid #464646;
 }
 
 #listaTarefas button {
@@ -97,21 +97,21 @@ h1 {
 
 #filtros button {
   padding: 8px 16px;
-  border: 2px solid #007bff;
+  border: 2px solid #40454b;
   background-color: white;
-  color: #007bff;
+  color: #4f575f;
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
 }
 
 .filtro-ativo {
-  background-color: #007bff !important;
+  background-color: #4f5d6b !important;
   color: white !important;
 }
 
 #filtros button:hover {
-  background-color: #e6f3ff;
+  background-color: #bdbdbd;
 }
 
 #contador {
