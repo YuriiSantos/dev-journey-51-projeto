@@ -84,6 +84,7 @@ async function buscarClimaPorCoordenadas(lat, lon) {
     if (!response.ok) {
       return null;
     }
+
     const dados = await response.json();
     return dados;
   } catch (error) {
