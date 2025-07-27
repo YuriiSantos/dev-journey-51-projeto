@@ -143,6 +143,6 @@ function gameLoop() {
   desenharJogo();
 }
 
-let intervaloGame = setInterval(gameLoop, 200);
+let intervaloGame = setInterval(gameLoop, 150);
 
 desenharJogo();
